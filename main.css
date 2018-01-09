@@ -1,0 +1,169 @@
+/*
+Red: #EC1649;
+*/
+
+body {
+  background-color: #ffffff;
+  margin-left: auto;
+margin-right: auto;
+}
+
+div.container {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "about"
+    "event"
+    "signup"
+    "footer";
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2000px;
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+    min-height: 300px;
+}
+
+section#header {
+  grid-area: header;
+}
+
+section#hero {
+  grid-area: hero;
+  display: none;
+}
+
+section#about {
+  grid-area: about;
+}
+
+section#event {
+  grid-area: event;
+}
+
+section#signup {
+  grid-area: signup;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+h1 {
+  text-align: left;
+  color:#EC1649;
+  font-size: 90px;
+  font-family: 'Francois One', sans-serif;
+  padding: 7px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: center;
+  color:#EC1649;
+  font-size: 35px;
+  font-family: 'Francois One', sans-serif;
+}
+
+h3 {
+  text-align: left;
+  color:#EC1649;
+  font-size: 20px;
+  font-family: 'Francois One', sans-serif;
+}
+
+p {
+  font-size: 35px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-bottom: 7px;
+  margin-left: 7px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.left_float {
+  float: left;
+  padding-left: 7px;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  font-size: 35px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
+
+div.parallax {
+    background-image: url("img/parallax_7.jpg");
+
+    height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 800px) {
+  div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "event event"
+      "about signup"
+      "footer footer";
+  }
+
+section#hero {
+    grid-area: hero;
+    display: block;
+  }
+
+h1 {
+  text-align: left;
+  color:#EC1649;
+  font-size: 60px;
+  font-family: 'Francois One', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color:#EC1649;
+  font-size: 45px;
+  font-family: 'Francois One', sans-serif;
+}
+
+p {
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+}
+
+img.left_float {
+  float: left;
+  padding-left: 7px;
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+}
